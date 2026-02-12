@@ -3,8 +3,6 @@
 Welcome to my Personal Portfolio website repository!  
 This project showcases my skills, projects, and background as a developer.
 
-🔗 Live Preview: *(Add your deployed link here if available)*
-
 ---
 
 ## 📌 About The Project
@@ -23,14 +21,9 @@ This portfolio website was created to:
 Depending on what you used, edit this section:
 
 - HTML5
-- CSS3
 - JavaScript
 - Tailwind CSS
-- Bootstrap
-- Laravel (if applicable)
-- Vite (if applicable)
+- Laravel
 
 ---
-
-## 📂 Project Structure
 
