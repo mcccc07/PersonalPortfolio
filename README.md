@@ -27,6 +27,7 @@ Depending on what you used, edit this section:
 
 ---
 
+<<<<<<< HEAD
 ```bash
 #1 Clone the github repository.
 git clone https://github.com/mcccc07/PersonalPortfolio.git
@@ -47,3 +48,5 @@ php artisan serve
 #Install the tailwindcss components for Vite.
 
 ```
+=======
+>>>>>>> 4c49666a18e96557352daefcca47f3cc88e97dba
