@@ -11,8 +11,6 @@ This portfolio website was created to:
 
 - Showcase my web development skills
 - Display my projects and achievements
-- Provide a way for recruiters and collaborators to contact me
-- Practice modern frontend development
 
 ---
 
