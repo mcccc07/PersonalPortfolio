@@ -17,11 +17,6 @@
             <h1 class="flex justify-start ml-12 text-3xl font-bold">
                 <a href="/">Port<span class="text-blue-500">folio</span></a>
             </h1>
-            <div class="flex justify-end mr-12">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
-                    <a href="/home">Get Started</a>
-                </button>
-            </div>
         </div>
     </header>
 
@@ -37,17 +32,24 @@
                     <p class="text-md font-Inter mt-2 p-2">
                         I am a passionate full stack developer with experience in building web applications using modern technologies. I enjoy creating efficient and scalable solutions to solve complex problems. My expertise includes JavaScript, Laravel, Python, and more. I am always eager to learn new technologies and improve my skills to deliver high-quality projects.
                     </p>
-
-
-                    
             </div>
 
             <section>
                 <div class="relative w-96 h-96 mr-12 ml-10 flex items-center justify-center">
                     <div class="absolute top-0 left-0 w-80 h-80 bg-blue-500 rounded-full z-0"></div>
                     <div class="absolute bottom-0 right-0 w-64 h-64 bg-blue-400 rounded-full z-0"></div>
-                    <img src="" alt="Developer Image" class="relative z-10 w-full h-full object-contain">
+                    <img src="images/ChosoTransparent.png" alt="Developer Image" class="relative z-10 w-full h-full object-contain">
                 </div>
+            </section>
+        </div>
+        <div class="grid grid-cols-2 gap-12 items-center mt-6 ml-12">
+            <section class="flex gap-4">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg text-xl">
+                    <a href="/home">View Portfolio</a>
+                </button>
+                <button class="bg-white hover:border-blue-700 hover:text-blue-700 text-blue-500 font-bold py-4 px-6 rounded-lg text-xl border border-blue-500">
+                    Download Resume
+                </button>
             </section>
         </div>
     </main>

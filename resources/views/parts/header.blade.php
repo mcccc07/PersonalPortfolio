@@ -25,9 +25,9 @@
         </nav>
 
         <div class="hidden md:flex">
-            <a href="/contact" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
-                Contact Me
-            </a>
+            <button onclick="openModal()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+                Get in Touch
+            </button>
         </div>
 
         <button id="mobile-menu-button" class="md:hidden text-blue-600 focus:outline-none">
@@ -55,13 +55,35 @@
                 </a>
             </li>
             <li class="px-4 py-2">
-                <a href="/contact" class="block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-center">
-                    Contact Me
-                </a>
+                <button onclick="openModal()" class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-center">
+                    Get in Touch
+                </button>
             </li>
         </ul>
     </nav>
 </header>
+
+<div id="myModal" class="hidden fixed inset-0 bg-white bg-opacity-50 z-50 flex items-center justify-center">
+    <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4 shadow-2xl border-2 border-gray-50">
+        <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+        <p class="text-gray-600 mb-6">Get in touch! I'd love to hear from you.</p>
+
+        <form class="space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg">
+            <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-lg">
+            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border rounded-lg"></textarea>
+
+            <div class="flex gap-3">
+                <button type="button" onclick="closeModal()" class="flex-1 px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400">
+                    Cancel
+                </button>
+                <button type="submit" class="flex-1 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
 
 <script>
     const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -71,7 +93,6 @@
     mobileMenuButton.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
     });
-
 
     function setActiveLink(clickedLink) {
         allNavLinks.forEach(link => {
@@ -91,7 +112,6 @@
         link.addEventListener('click', function(e) {
             setActiveLink(this);
 
-            // Close mobile menu if open
             if (!mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.add('hidden');
             }
@@ -105,5 +125,19 @@
                 setActiveLink(link);
             }
         });
+    });
+
+    function openModal() {
+        document.getElementById('myModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').classList.add('hidden');
+    }
+
+    document.getElementById('myModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeModal();
+        }
     });
 </script>
