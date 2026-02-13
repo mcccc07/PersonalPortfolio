@@ -10,6 +10,7 @@ This project showcases my skills, projects, and background as a developer.
 ![alt text]({0FE231F5-4967-4E15-B6EA-9A2ECB8A4A9F}.png)
 ![alt text]({D186E7FB-4431-479A-96BA-A377331A09CC}.png)
 ![alt text]({0E5F365E-25EA-4262-9041-B8632CAE0839}.png)
+![alt text]({7EDA37B0-69EA-40B1-9F17-0BED5959D954}.png)
 
 ---
 
